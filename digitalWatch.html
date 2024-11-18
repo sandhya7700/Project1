@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(45deg, #ff7e5f, #feb47b);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    #watch {
+        font-size: 48px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+</style>
+<body>
+    <div id="watch">My Watch</div>
+</body>
+<script>
+
+function currentTime () {
+    var curTime = new Date().toLocaleTimeString();
+    // var curTime = new Date().toDateString();
+
+    document.getElementById("watch").innerHTML = curTime;
+}
+
+
+const interValid = setInterval(() => {
+        currentTime();
+    } , 1000);
+
+// setTimeout(() => clearInterval(interValid) , 5000);
+
+</script>
+</html>

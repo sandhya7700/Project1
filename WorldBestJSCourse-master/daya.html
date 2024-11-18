@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<style>
+
+</style>
+<body>
+    <h1 id="daya">Daya Pal</h1>
+    <button id="btn">Click Me</button>
+</body>
+<script>
+// var d = document.getElementById("daya").innerText;
+// var d = document.getElementById("daya").innerHTML;
+var d = document.getElementById("daya");
+var btn = document.getElementById("btn");
+
+// console.log(btn);
+
+
+btn.addEventListener("click" , function (){
+    d.style.color = "red";
+    d.style.fontSize = "50px";
+    d.innerHTML = "siya";
+});
+</script>
+</html>

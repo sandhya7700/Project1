@@ -1,0 +1,168 @@
+Q.1 javascript ki kitne tarike se use kr skte hai ?
+Q.2 what is variable and there rules ?
+Q.3 what is data types ?
+Q.4 What is the difference between null and undefined in JavaScript ?
+Q.5 What is the purpose of typeof operator in JavaScript ?
+Q.6 What is the result of `typeof null` in JavaScript ?
+Q.7 What are primitive data types in JavaScript ?
+Q.8 Explain the concept of truthy and falsy values in JavaScript. Provide examples ?
+
+
+a. 10 + "20"
+b. 9 - "5"
+c. "Java" + "Script"
+d." " + " "
+e. " " + 0
+f. "vinod" - "thapa"
+g. true + true
+h.true + false
+i. false + true
+j. false - true
+
+
+Q.9 What is Operator and Types of Operators ?
+Q.10 What is expressions ?
+ 
+console.log("5" - 3);
+console.log(2 < 12 < 5);
+console.log("20" + 10 + 10);
+
+
+Q.11 What is Control Statements & Loops ?
+Q.12 Types of Control Statements in JavaScript ?
+Q.13 Types of Loops in JavaScript ?
+Q.14 Difference between while and do-while loop ?
+
+If Else Statement
+1: Write a program to check if a number is even or odd.
+2: Write a program to check if a number is prime.
+3: Write a program to check if a number is positive, negative, or zero.
+
+
+## Switch Statement
+Q: Write a JavaScript switch statement that takes a variable areaOfShapes representing
+different shapes, and based on its value, calculates and logs the area of the corresponding
+shape. Consider three shapes: 'Rectangle,' 'Circle,' and 'Square.' For 'Rectangle,' use variables a
+and b as the sides; for 'Circle,' use a variable r as the radius; and for 'Square,' use variable a as the
+side length. If the provided shape is not recognized, log a message saying, 'Sorry the shape is not
+available.' Test your switch statement with areaOfShapes set to 'Square' and sides a and b set to
+5 and 10, respectively. Ensure that the correct area (25 in this case) is logged to the console
+
+
+## For Loop
+Program To check if a year is
+a leap year,
+If a year is divisible by 4 and
+not divisible by 100, or
+If a year is divisible by 400,
+then it is a leap year.
+Otherwise, it is not a leap year.
+
+Q.15 What is function and there types ?
+
+
+Interview Questions – Function
+1: Reverse a String: Write a function to reverse a given string
+without using built-in reverse methods.
+2: Palindrome Check: Create a function to determine if a given string
+is a palindrome (reads the same backward as forward).
+3: Calculator Function: Write a JavaScript function calculator that
+takes two numbers and an operator as parameters and returns the
+result of the operation. The function should support addition,
+subtraction, multiplication, and division.
+
+Q.16 Arrays And there types ?
+Q.17 Arrays predefine method() ?
+Q.18 What is forEach() loop ?
+Q.19 Whta is map() , filter() and reduce() functions ?
+Q.20 Difference between map() , filter() and reduce() ?
+Q.21 What is String ?
+Q.22 Types of string method() ?
+
+
+Interview Questions – Strings
+1: Write a JavaScript function that prints the letters 'a' through
+'z' in the console. You should use a loop to iterate through the
+letters and print each one on a new line.
+2: Write a function to count the number of vowels in a string?
+3: Write a function to check if all the vowels presents in a string
+or not?
+
+
+
+Write a JavaScript function isPangram that takes a string as input
+and returns true if the string is a pangram (contains all letters of
+the alphabet) and false otherwise. The function should be caseinsensitive and ignore spaces.
+Constraints:
+1: The input string will consist of alphabetic characters and spaces.
+2: The function should handle both uppercase and lowercase letters.
+3: Consider the English alphabet with 26 letters.
+
+Q.23 What is Math Object ?
+Q.24 Types of function in Math Objects ?
+Q.25 Difference Between Round, Floor & Ceil
+
+
+
+
+============================================ Advance JS =====================================================
+
+ECMAScript 2015 / ES6
+LET AND CONST
+TEMPLATE STRINGS
+DEFAULT ARGUMENTS
+OBJECT PROPERTIES
+ARROW FUNCTION
+REST OPERATORS
+SPREAD OPERATORS
+
+
+Q.1 What is window ?
+Q.2 What is DOM and BOM ?
+
+
+NOTE1 :- So, while the DOM is focused on the content of the
+         page, the BOM is focused on the browser environment.
+         The window object serves as the global object that
+         encompasses both the BOM and the DOM when working in
+         a browser environment.
+
+
+NOTE2 :- The Document Object Model (DOM) is a tree-like representation of the HTML
+         document. It provides a way to interact with the HTML document using
+         JavaScript. The DOM provides multiple properties and methods to dynamically
+         change the content of the HTML document using JavaScript
+
+## DOM Properties
+document
+getElementById(id)
+getElementsByClassName(className)
+getElementsByTagName(tagName)
+querySelector(selector)
+querySelectorAll(selector)
+innerHTML
+textContent
+style
+
+## DOM Methods
+createElement(tagName)
+appendChild(node)
+removeChild(node)
+addEventListener(event, function)
+removeEventListener(event, function)
+setAttribute(name, value)
+getAttribute(name)
+parentNode / parentElement
+childNodes / children
+firstChild / firstElementChild
+lastChild / lastElementChild
+nextSibling / nextElementSibling
+previousSibling / previousElementSibling
+closest(selector)
+forEach (Array.from)
+
+
+Q.3 What is Event Object ?
+Q.4 MouseEvents , KeyboardEvents and InputEvents ?
+Q.5 Any 10 Events name ?
+

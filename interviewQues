@@ -1,0 +1,83 @@
+// Q.1
+<?php
+$x = NULL;
+$y = null;
+
+var_dump($x===$y); //true
+var_dump($x==$y); //true
+?>
+
+// Q.2
+What is the primary purpose of PHP ?
+a) Front-end development
+b) Server-side scripting (ok)
+c) Database management
+d) Mobile app development
+
+// Q.3
+php is frontend or backend ?
+ans:- backend
+
+// Q.4 Rules for PHP variables
+ans:- 6 rules
+a) Start with a dollar sign .
+b) Case-sensitive : $x and $X are two different variables .
+c) Avoid reserved words:- abstract , and , array , as break .
+d) A variable name must start with a letter or the underscore character .
+e) A variable name cannot start with a number .
+f) A variable name can only contain alph-numeric characters and underscores (A-z , 0-9 , and ....) .
+
+// Q.5
+Types of Erro in PHP
+1. Syntax Errors :
+a) when the code violates the rules of PHP syntax , such as missing
+   semicolons , incorrect variable declarations
+
+   2. Fatal Errors :
+a) a coding error that causes a script to immediately stop running .
+b) undefined function call .
+
+3. Warnings :A non-fatal error that indicates a problem in the code that might not be servere enough to stop the script from running . 
+a)Using deprecated function,Including external files that don't exist .
+
+4. Notice Errors : minor errors that indicate issues in the code but don't stop the script from running .
+a) Using a variable before declaring it and Typos in variblaes names .
+
+// Q.6
+<?php
+$a;
+
+var_dump($a); // null
+
+options :-
+false
+undefine
+NULL (Yes)
+error
+?>
+
+// Q.7 What is ternary Operator 
+
+echo $age>=18 ? "You are adult" : "You are not adult";
+
+
+$age = 15;
+if($age >= 18){
+    echo "I am adult";
+}
+else if($age>=13) {
+    echo "I am teenager";  
+}
+else {
+    echo "I am kid";  
+}
+
+
+echo $age>=18 ? "You are adult" : ($age>=13 ?"You are not adult");
+
+// Q.8
+$array = ["Anil" , "Sam" , "Peter"];
+$array2 = ["name" => "Anil" , "age" => 28 , "city" => "Delhi"];
+
+$array = ["Anil" , "Sam" , "city" => "Noida"];
+print_r($array['city']);

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+}
+
+.elem{
+    height: 120px;
+    width: 100%;
+    /* background-color: red; */
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.elem h1{
+    font-size: 6vw;
+    position: relative;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+
+.elem img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    /* opacity: 0; */
+    transition: all linear 0.3s;
+}
+</style>
+<body>
+    <div id="main">
+<div id="elem1" class="elem">
+    <h1>Oppenheimer</h1>
+    <img src="https://plus.unsplash.com/premium_photo-1729485793223-f19572c349f0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Error">
+</div>
+<div class="elem">
+    <h1>Joe Root</h1>
+    <img src="https://plus.unsplash.com/premium_photo-1728930317816-d4ddc93763cd?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt="Error">
+</div>
+<div class="elem">
+    <h1>James Anderson</h1>
+    <img src="https://pbs.twimg.com/media/GaQ9YWUXkAE7EKc?format=jpg&name=small" alt="Error">
+</div>
+<div class="elem">
+    <h1>Roman Reign</h1>
+    <img src="https://images.pexels.com/photos/24710620/pexels-photo-24710620/free-photo-of-eagle.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Error">
+</div>
+    </div>
+</body>
+<script>
+var elem1 = document.querySelectorAll('.elem1');
+
+elem1.forEach(function(val){
+
+    console.log(val.childNodes);
+
+val.addEventListener("mouseenter",function(){
+  val.childNodes[3].style.opcity = 1;
+});
+
+val.addEventListener("mouseleave",function(){
+    val.childNodes[3].style.opcity = 0;
+});
+
+val.addEventListener("mousemove",function(dets){
+    val.childNodes[3].style.left = dets.x+"px";
+    val.childNodes[3].style.top = dets.y+"px";
+});
+
+})
+</script>
+</html>

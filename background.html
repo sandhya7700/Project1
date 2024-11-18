@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+</head>
+<body>
+    <div id="mainbox">
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde natus doloremque temporibus eos ducimus eum, autem accusamus harum aliquid eaque dolorum illum facilis deserunt possimus dolore quas magni asperiores deleniti beatae. Omnis animi iusto ex ipsam at tempora fugit voluptatum dolor magni vero. Quis suscipit maiores veniam porro rerum molestias!</p>
+    </div>
+    <button id="btn">
+        on
+    </button>
+</body>
+<script>
+   var a = document.getElementById("mainbox");
+   var b = document.getElementById("para");
+   var c = document.getElementById("btn");
+   var flag = 0;
+   c.addEventListener("click" , function(){
+    if(flag == 0){
+        a.style.backgroundColor = "black";
+        b.style.color = "white";
+        flag = 1;
+    } 
+    else {
+        a.style.backgroundColor = "white";
+        b.style.color = "black";  
+        flag = 0;
+        console.log("gzdjds");
+    }
+   });
+</script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <style>
+        #mainbox {
+            height: 300px;
+            width: 300px;
+            border: solid 2px black;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        #box {
+            text-align: center;
+            margin-top: 55px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainbox">
+        <!-- <h1>Hello world</h1> -->
+    </div>
+
+    <div id="box">
+        <button id="on">On</button>
+    </div>
+</body>
+
+<script>
+    var a = document.getElementById("mainbox");
+
+    var b = document.getElementById("on");
+    b.style.height = "30px";
+    b.style.fontWeight = "50px";
+    
+    var flag = false;
+    b.addEventListener("click", function () {
+        if(flag === false){
+            a.style.backgroundColor = "yellow";  
+            a.style.border = "none";
+            flag = true;
+        }
+        else{
+            a.style.backgroundColor = "black";  
+            a.style.border = "solid 2px grey";
+            flag = false;
+        }
+    })
+
+</script>
+
+</html>

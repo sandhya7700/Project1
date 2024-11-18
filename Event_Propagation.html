@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+</head>
+<style>
+.mainBody{
+    cursor: pointer;
+}
+</style>
+<body>
+    <section class="mainBody"></section>
+</body>
+<script>
+
+const createPeriodicElement = (symbol , atomicNumber , name) =>{
+    const element = document.createElement("div");
+    element.classList.add("element");
+    element.innerHTML = symbol;
+
+    element.setAttribute("data-atomic-number" , atomicNumer);
+    element.setAttribute("data-atomic-number" , name);
+
+
+    return element;
+};
+
+const handleElementClick = (event) => {
+    const target = event.target;
+    if(target.classList.contains("element")){
+        const atomicNumber = target.getAttribute("data-atomic-number");
+        const elementName = target.getAttribute("data-atomic-number");
+        alert(`Atomic Number: ${atomicNumber} \nElement Name: ${elementName}`);
+    }
+}
+
+// Function to initialize the Peridoic table
+function initializePeriodicTable(){
+const mainBody = document.querySelector(".mainBody");
+for(let i=1; i<=50; i++){
+
+    const element = createPeriodicElement(`Elem${i}` , i , `Element${i}`);
+    mainBody.append(element);
+    mainBody.addEventListener("click",handleElementClick);
+
+
+    // const element = document.createElement("div");
+    // element.innerText = i;
+    // mainBody.append(element);
+}
+
+
+mainBody.addEventListener("click",(e) =>{
+    alert(e.target.innerText);
+})
+
+}
+
+
+// initialize the Periodic Table
+initializePeriodicTable();
+</script>
+</html>
